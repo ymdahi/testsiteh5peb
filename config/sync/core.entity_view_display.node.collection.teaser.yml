@@ -1,0 +1,24 @@
+uuid: 2e6f99e6-3c7d-405d-a0d4-d19695bd6baa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.collection.field_entity_browser_not_table_
+    - field.field.node.collection.field_resources
+    - node.type.collection
+  module:
+    - user
+id: node.collection.teaser
+targetEntityType: node
+bundle: collection
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_entity_browser_not_table_: true
+  field_resources: true

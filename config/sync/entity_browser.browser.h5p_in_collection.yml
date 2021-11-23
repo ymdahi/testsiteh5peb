@@ -1,0 +1,31 @@
+uuid: 340ece08-a674-4713-928c-39e80787645c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entbr_h5p_for_collections
+  module:
+    - views
+name: h5p_in_collection
+label: 'H5P in Collection'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3c6f6c2c-2da3-485d-8527-52cd9e14c328:
+    settings:
+      view: entbr_h5p_for_collections
+      view_display: entity_browser_1
+      submit_text: 'Select resources'
+      auto_select: false
+    uuid: 3c6f6c2c-2da3-485d-8527-52cd9e14c328
+    weight: 1
+    label: H5P
+    id: view

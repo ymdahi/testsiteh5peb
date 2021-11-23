@@ -1,0 +1,17 @@
+uuid: 60e8f08b-8eab-4d95-b45b-be4ca79f17f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: H5P
+type: h5p
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

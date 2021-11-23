@@ -1,0 +1,22 @@
+<?php
+
+function h5peb_entity_browser_table_fields_alter(&$fields, $context) {
+  if ($context['entity_type'] == 'node') {
+    $fields['title'] = [
+      'type' => 'field',
+      'label' => t('title'),
+      'weight' => 0,
+    ];
+    $fields['field_subject'] = [
+      'type' => 'field',
+      'label' => t('subject'),
+      'weight' => 0,
+    ];
+    $fields['field_h5p'] = [
+      'type' => 'field',
+      'label' => t('h5p'),
+      'weight' => 0,
+    ];
+  }
+
+}

@@ -1,0 +1,14 @@
+uuid: 6a4671d6-5af2-4da2-ac55-50990518993b
+name: 'Entity Browser Site'
+mail: ymdahi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

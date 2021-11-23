@@ -1,0 +1,11 @@
+id: h5p_info_block
+label: 'H5P Info Block'
+ui_limit: ''
+properties:
+  block: 'views_block:h5p_info_block-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  node: node

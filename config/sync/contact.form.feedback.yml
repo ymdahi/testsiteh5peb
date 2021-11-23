@@ -1,0 +1,14 @@
+uuid: fea99cf1-0cfb-4379-ad7a-063fb8fdc0a7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - ymdahi@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

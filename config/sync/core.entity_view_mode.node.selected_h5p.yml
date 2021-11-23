@@ -1,0 +1,10 @@
+uuid: 1f7d4f4a-6b19-49c2-969d-82cd709d3fd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.selected_h5p
+label: 'Selected h5p'
+targetEntityType: node
+cache: true

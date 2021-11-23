@@ -1,0 +1,37 @@
+uuid: d4389191-4fac-445e-b542-ce7c999cecfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.collection.field_entity_browser_not_table_
+    - field.field.node.collection.field_resources
+    - node.type.collection
+  module:
+    - user
+id: node.collection.default
+targetEntityType: node
+bundle: collection
+mode: default
+content:
+  field_entity_browser_not_table_:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_resources:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,61 @@
+uuid: e42080eb-63af-41e0-b16f-bd1dba70b2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.selected_h5p
+    - field.field.node.h5p.field_h5p
+    - field.field.node.h5p.field_subject
+    - node.type.h5p
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - 'dynamic_block_field:node-h5p_info_block'
+        - field_subject
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-h5p_info_block':
+        plugin_id: 'dynamic_block_field:node-h5p_info_block'
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.h5p.selected_h5p
+targetEntityType: node
+bundle: h5p
+mode: selected_h5p
+content:
+  field_subject:
+    type: entity_reference_label
+    weight: 2
+    region: ds_content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  field_h5p: true
+  links: true

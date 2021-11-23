@@ -1,0 +1,29 @@
+uuid: 4ca0497d-096b-4d8d-a087-9ac001693d34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subject
+    - node.type.h5p
+    - taxonomy.vocabulary.tags
+id: node.h5p.field_subject
+field_name: field_subject
+entity_type: node
+bundle: h5p
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
