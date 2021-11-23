@@ -155,8 +155,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: true
+          label: Title
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -199,7 +199,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -220,7 +220,7 @@ display:
           relationship: field_h5p_h5p_content_id
           group_type: group
           admin_label: ''
-          label: Title
+          label: 'H5P Title'
           exclude: false
           alter:
             alter_text: false

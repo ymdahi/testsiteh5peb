@@ -41,7 +41,7 @@ content:
     weight: 121
     settings:
       entity_browser: h5p_in_collection
-      field_widget_display: label
+      field_widget_display: fields
       field_widget_remove: '1'
       field_widget_replace: '1'
       open: '1'
