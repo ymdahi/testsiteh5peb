@@ -7,22 +7,25 @@
 
 /**
  * Implements hook_entity_browser_table_fields_alter().
+ *
+ * The below fields are only used to create a correct header in the
+ * "Entity Browser (Table)" part of the collection add/edit form.
  */
 function h5peb_entity_browser_table_fields_alter(&$fields, $context) {
   if ($context['entity_type'] === 'node') {
     $fields['title'] = [
       'type' => 'field',
-      'label' => t('title'),
+      'label' => t('H5P title'),
       'weight' => 0,
     ];
-    $fields['field_subject'] = [
+    $fields['license'] = [
       'type' => 'field',
-      'label' => t('subject'),
+      'label' => t('License'),
       'weight' => 0,
     ];
-    $fields['field_h5p'] = [
+    $fields['library'] = [
       'type' => 'field',
-      'label' => t('h5p'),
+      'label' => t('Library'),
       'weight' => 0,
     ];
   }
