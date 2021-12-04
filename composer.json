@@ -43,7 +43,8 @@
             },
             "drupal/entity_browser_table": {
                 "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch",
-                "#3153619": "https://www.drupal.org/files/issues/2020-07-31/3153619-entity-browser-table-custom.patch"
+                "#3153619": "https://www.drupal.org/files/issues/2020-07-31/3153619-entity-browser-table-custom.patch",
+                "custom_h5p_EntityReferenceBrowserTableWidget": "patches/custom_h5p_EntityReferenceBrowserTableWidget.patch"
             }
         },
         "drupal-scaffold": {
