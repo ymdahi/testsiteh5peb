@@ -1,5 +1,7 @@
 name: H5P in Entity Browser
 type: module
-description: 'mod for h5p in ent browser'
-package: Development
-core: 8.x
+description: 'Mod for H5P in Entity Browser - Table Layout'
+package: Custom
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - entity_browser_table:entity_browser_table

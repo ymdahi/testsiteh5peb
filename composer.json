@@ -17,8 +17,8 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.0",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/ds": "^3.13",
         "drupal/entity_browser": "^2.6",
@@ -42,7 +42,9 @@
                 "#3114732": "https://www.drupal.org/files/issues/2020-02-20/3114732-library-name-in-views.patch"
             },
             "drupal/entity_browser_table": {
-                "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch"
+                "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch",
+                "#3153619": "https://www.drupal.org/files/issues/2020-07-31/3153619-entity-browser-table-custom.patch",
+                "custom_h5p_EntityReferenceBrowserTableWidget": "patches/custom_h5p_EntityReferenceBrowserTableWidget.patch"
             }
         },
         "drupal-scaffold": {
@@ -74,27 +76,6 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
-            ]
-        },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
             ]
         }
     }
